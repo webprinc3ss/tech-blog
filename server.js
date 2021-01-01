@@ -16,7 +16,7 @@ const sess = {
     rolling: true, // <-- Set `rolling` to `true`
     cookie: {
         httpOnly: true,
-        maxAge: 1000 //2 * 60 * 60 * 1000 //2 hours;
+        maxAge: 2 * 60 * 60 * 1000 //2 hours;
     },
     resave: false,
     saveUninitialized: true,
