@@ -1,3 +1,4 @@
+require('dotenv').config();
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
@@ -11,15 +12,18 @@ const PORT = process.env.PORT || 3001;
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-    secret: 'Super secret secret',
-    cookie: {},
+    secret: process.env.SESSION_SECRET,
+    rolling: true, // <-- Set `rolling` to `true`
+    cookie: {
+        httpOnly: true,
+        maxAge: 1000 //2 * 60 * 60 * 1000 //2 hours;
+    },
     resave: false,
     saveUninitialized: true,
     store: new SequelizeStore({
         db: sequelize
     })
 };
-
 
 app.use(session(sess));
 
