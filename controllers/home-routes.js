@@ -32,7 +32,9 @@ router.get('/', (req, res) => {
             const posts = dbPostData.map(post => post.get({ plain: true }));
             res.render('homepage', {
                 posts,
-                loggedIn: req.session.loggedIn
+                loggedIn: !!req.session.loggedIn,
+                user: { username: req.session.username }
+
             });
         })
         .catch(err => {
@@ -41,6 +43,7 @@ router.get('/', (req, res) => {
         });
 });
 
+//render login
 router.get('/login', (req, res) => {
     if (req.session.loggedIn) {
         res.redirect('/');
@@ -48,6 +51,15 @@ router.get('/login', (req, res) => {
     }
 
     res.render('login');
+});
+
+//render signup page
+router.get('/signup', (req, res) => {
+    if (req.session.loggedIn) {
+        res.redirect('/');
+        return;
+    }
+    res.render('signup');
 });
 
 router.get('/post/:id', (req, res) => {

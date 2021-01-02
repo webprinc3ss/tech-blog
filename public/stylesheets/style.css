@@ -7,6 +7,12 @@ html {
   min-height: 100%;
   }
 
+body {
+  background-image: url("/images/colorful_code.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 body, html {
   height: 100%;
   padding: 0;
@@ -17,19 +23,19 @@ body, html {
 
 a {
   text-decoration: none;
-  color: #225ca3;
+  color: #0067e8;
   font-weight: bold;
   transition: color .5s;
 }
 
 a:hover {
-  color: #3486eb;
+  color: #f80265;
 }
 
 button {
-  background-color: #225ca3;
+  background-color: #0067e8;
   border: 0;
-  padding: 1%;
+  padding: 5px;
   color: white;
   font-weight: bold;
   transition: background-color .1s;
@@ -38,7 +44,7 @@ button {
 }
 
 button:hover {
-  background-color: #3486eb;
+  background-color: #f80265;
 }
 
 .post-list {
@@ -51,6 +57,8 @@ textarea, input {
   padding: .5%;
   border-radius: 5px;
   border: 1px solid #ccc;
+  height: 30px;
+  width: 60%;
 }
 
 textarea:focus, input:focus {
@@ -81,8 +89,7 @@ form label {
 }
 
 header {
-  /* border-bottom: 1px solid #ccc; */
-
+  height: 85px;
   background-image: linear-gradient(black, #012764, #00378e);
   display: flex;
   justify-content: center;
@@ -101,7 +108,16 @@ header {
 
 .right {
   width: 33%;
-  text-align:right;
+  text-align:left;
+}
+
+.right a {
+  color: #eaef3a;
+  /* width: 100%;  */
+}
+
+.right a:hover {
+  color: #fff;
 }
 
 header h1 a {
@@ -115,7 +131,7 @@ header h1 a {
 }
 
 header h1 a:hover {
-  color:#fff;
+  color:#f99535 !important;
 }
 
 .headmini {
@@ -141,32 +157,32 @@ nav {
 }
 
 nav a {
-  color: white;
+  color: #eaef3a;
   /* width: 100%;  */
 }
 
 nav a:hover {
-  color: #eaef3a;
+  color: #fff;
 }
 
 main {
-  flex: 1;
-  padding: 2% 4%;
+  /* flex: 1; */
+  padding: 2% 10%;
   z-index: 8000;
   position: relative;
-  background-image: url("/images/colorful_code.jpg");
   background-attachment: fixed;
   display: flex;
   justify-content: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 section {
   background-attachment: scroll;
-  -webkit-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
-  -moz-box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
-  box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
+  box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
   padding: 20px;
   background: rgba(255, 255, 255, 0.95);
   /* width: 60%; */
@@ -175,13 +191,20 @@ section {
   margin-bottom: 20px;
 }
 
+.form-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:50vh;
+}
+
 .btn-no-style {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
   text-decoration: none;
-  color: #225ca3;
+  color: #eaef3a;
   font-size: 100%;
   font-weight: bold;
   transition: color .1s;
@@ -190,7 +213,12 @@ section {
 
 .btn-no-style:hover {
   background: none;
-  color: #3486eb;
+  color: #fff;
+}
+
+.login-form .signup-form {
+  width: 200px;
+  line-height: 25px;
 }
 
 .delete-post-btn {
@@ -238,35 +266,45 @@ section {
 }
 
 .new-post-form input {
-  width: 300px;
+  width: 60vh;
 }
 
 .edit-post-form {
   margin-bottom: 5%;
 }
 
+.spacebottom {
+  margin-bottom: 100px;
+}
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
-  height: 75px;
+  height: 100px;
   width: 100%;
   color:#FFFFFF; 
   background-color: #00378e;
-  /* background-image: url("/images/colorful_code.jpg"); */
   background-image: linear-gradient(#00378e, black);
   font-size:1.5em;
+  line-height: 24px;
   text-align: center;
-  line-height:75px;
+  padding: 15px;
   z-index: 9999;
   -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
   -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
   box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
-  /* border-top: 1px solid #ccc;
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
-  position: fixed;
-  z-index: 9999; */
+}
+
+.welcome {
+  color:  #eaef3a;
+}
+
+.logged-in {
+  font-size: .7em;
+}
+
+.copy {
+  font-size: 12px;
+  color: #fa4568;
 }
