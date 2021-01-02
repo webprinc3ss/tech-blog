@@ -42,7 +42,6 @@ button:hover {
 }
 
 .post-list {
-
   margin: 0;
   padding: 0;
 
@@ -83,6 +82,7 @@ form label {
 
 header {
   /* border-bottom: 1px solid #ccc; */
+
   background-image: linear-gradient(black, #012764, #00378e);
   display: flex;
   justify-content: center;
@@ -99,12 +99,18 @@ header {
   z-index: 9999;
 }
 
+.right {
+  width: 33%;
+  text-align:right;
+}
+
 header h1 a {
   font-family: 'Share Tech Mono', monospace;
   font-size: 1.75em;
   font-weight: strong;
   color: #eaef3a;
   padding: 0px;
+  width:33%;
   /* background-color: white; */
 }
 
@@ -124,6 +130,23 @@ header h1 a:hover {
   font-size: .60em;
   font-family: helvetica;
   color: #fa4568;
+}
+
+nav {
+  width:33%;
+  /* display: flex;
+  justify-content: right;
+    */
+    text-align:right;
+}
+
+nav a {
+  color: white;
+  /* width: 100%;  */
+}
+
+nav a:hover {
+  color: #eaef3a;
 }
 
 main {
@@ -146,11 +169,10 @@ section {
   box-shadow: 0px 0px 0px 10px rgba(0,0,0,0);
   padding: 20px;
   background: rgba(255, 255, 255, 0.95);
-  width: 60%;
+  /* width: 60%; */
   border: 1px solid #00378e;
   border-radius: 25px;
   margin-bottom: 20px;
-
 }
 
 .btn-no-style {
@@ -182,6 +204,7 @@ section {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  
 }
 
 .post .title span {
