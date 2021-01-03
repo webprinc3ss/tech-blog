@@ -191,6 +191,14 @@ section {
   margin-bottom: 20px;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+
+}
+
 .form-center {
   display: flex;
   justify-content: center;
@@ -270,6 +278,7 @@ section {
 }
 
 .edit-post-form {
+  width: 60vh;
   margin-bottom: 5%;
 }
 
