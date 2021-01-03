@@ -58,7 +58,7 @@ textarea, input {
   border-radius: 5px;
   border: 1px solid #ccc;
   height: 30px;
-  width: 60%;
+  width: 100%;
 }
 
 textarea:focus, input:focus {
@@ -188,7 +188,7 @@ section {
   /* width: 60%; */
   border: 1px solid #00378e;
   border-radius: 25px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .container {
@@ -230,11 +230,11 @@ section {
 }
 
 .delete-post-btn {
-  background-color: #d41414;
+  background-color: #ff643d;
 }
 
 .delete-post-btn:hover {
-  background-color: #ff643d;
+  background-color: #f80265;
 }
 
 .post {
