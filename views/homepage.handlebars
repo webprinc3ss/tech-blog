@@ -1,8 +1,11 @@
-<div class="post-list">
-    {{#each posts as |post|}}
-    <section>
-        {{> post-info post }}
-    </section>
-    {{/each}}
-    <div class="spacebottom"></div>
+<div class="post-container">
+    <article>
+        {{#each posts as |post|}}
+        <div class="post-section">
+            {{> post-info post }}
+        </div>
+        {{/each}}
+    </article>
 </div>
+
+<div class="spacebottom"></div>

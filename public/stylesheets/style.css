@@ -67,8 +67,13 @@ textarea:focus, input:focus {
 }
 
 textarea {
-  min-width: 70%;
+  width: 100%;
+  /* min-width: 70%; */
   min-height: 200px;
+}
+
+form {
+  width: 90%;
 }
 
 form > div {
@@ -79,14 +84,14 @@ form label {
   display: block;
 }
 
-.wrapper {
+/* .wrapper {
   width: 100%;
   min-height: 100%;
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-}
+} */
 
 header {
   height: 85px;
@@ -167,7 +172,7 @@ nav a:hover {
 
 main {
   /* flex: 1; */
-  padding: 2% 10%;
+  padding: 2% 20%;
   z-index: 8000;
   position: relative;
   background-attachment: fixed;
@@ -177,26 +182,59 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* width:100% */
 
 }
 
 section {
+  /* padding: 0% 12%; */
   background-attachment: scroll;
   box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
-  padding: 20px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.95);
-  /* width: 60%; */
+  /* width: 55%; */
   border: 1px solid #00378e;
   border-radius: 25px;
-  margin-bottom: 100px;
+  display: flex;
+  justify-content: left;
+  width:100%;
+  /* align-items: center; */
+  margin-bottom:100px;
+  /* margin-bottom: 100px; */
 }
 
-.container {
+.center-content {
   display: flex;
   justify-content: center;
-  width: 100%;
-  align-items: center;
+}
 
+/* .container {
+  display: flex;
+  justify-content: center;
+  width:100%;
+  align-items: center;
+  margin-bottom:100px;
+} */
+
+.post-section {
+  background-attachment: scroll;
+  box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
+  padding: 10px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  border: 1px solid #00378e;
+  border-radius: 25px;
+  /* margin-bottom: 100px; */
+}
+
+.post-container {
+  display: flex;
+  justify-content: center;
+  /* padding: 0% 12%; */
+  align-items: center;
+  margin-bottom:100px;
 }
 
 .form-center {
@@ -274,7 +312,7 @@ section {
 }
 
 .new-post-form input {
-  width: 60vh;
+  width: 100%;
 }
 
 .edit-post-form {
