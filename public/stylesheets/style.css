@@ -73,7 +73,7 @@ textarea {
 }
 
 form {
-  width: 90%;
+  width:100%;
 }
 
 form > div {
@@ -209,6 +209,10 @@ section {
   justify-content: center;
 }
 
+article {
+  width: 100%;
+}
+
 /* .container {
   display: flex;
   justify-content: center;
@@ -259,7 +263,7 @@ section {
   display: flex;
   justify-content: center;
   /* align-items: center; */
-  min-width: 30%;
+  width: 300px;
   /* height:50vh; */
 }
 
@@ -335,7 +339,7 @@ section {
 }
 
 .edit-post-form {
-  width: 60vh;
+  width: 100%;
   margin-bottom: 5%;
 }
 
