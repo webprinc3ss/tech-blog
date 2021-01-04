@@ -237,11 +237,30 @@ section {
   margin-bottom:100px;
 }
 
+.section-form {
+  /* padding: 0% 12%; */
+  background-attachment: scroll;
+  box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.95);
+  /* width: 55%; */
+  border: 1px solid #00378e;
+  border-radius: 25px;
+  /* display: flex;
+  justify-content: center; */
+  width:100%;
+  /* align-items: center; */
+  margin-bottom:100px;
+  /* margin-bottom: 100px; */
+}
+
 .form-center {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height:50vh;
+  /* align-items: center; */
+  min-width: 30%;
+  /* height:50vh; */
 }
 
 .btn-no-style {
