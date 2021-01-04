@@ -111,6 +111,13 @@ header {
   z-index: 9999;
 }
 
+.head-container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 .right {
   width: 33%;
   text-align:left;
@@ -172,7 +179,7 @@ nav a:hover {
 
 main {
   /* flex: 1; */
-  padding: 2% 20%;
+  padding: 2% 25%;
   z-index: 8000;
   position: relative;
   background-attachment: fixed;
