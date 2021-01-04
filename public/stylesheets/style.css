@@ -172,7 +172,7 @@ nav a:hover {
 
 main {
   /* flex: 1; */
-  padding: 2% 20%;
+  padding: 2% 30%;
   z-index: 8000;
   position: relative;
   background-attachment: fixed;
