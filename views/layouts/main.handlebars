@@ -11,8 +11,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
-    {{!--
-    <link rel="shortcut icon" href="/images/favicon.ico"> --}}
     <link rel="manifest" href="/images/site.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -22,19 +20,22 @@
 
 <body>
     <header>
-        <div class="right"><a href="/">homepage</a></div>
-        <h1>
-            <a href="/"><span class="headbracket">{ </span><span class="headmini">the</span>TECH<span
-                    class="headmini">blog</span><span class="headbracket"> }</span></a>
-        </h1>
-        <nav>
-            {{#if loggedIn}}
-            <a href="/dashboard">dashboard</a>
-            <button id="logout" class="btn-no-style">logout</button>
-            {{else}}
-            <a href="/login">login</a>
-            {{/if}}
-        </nav>
+        <div class="head-container">
+            <div class="right"><a href="/">homepage</a></div>
+            <h1>
+                <a href="/"><span class="headbracket">{ </span><span class="headmini">the</span>TECH<span
+                        class="headmini">blog</span><span class="headbracket">
+                        }</span></a>
+            </h1>
+            <nav>
+                {{#if loggedIn}}
+                <a href="/dashboard">dashboard</a>
+                <button id="logout" class="btn-no-style">logout</button>
+                {{else}}
+                <a href="/login">login</a>
+                {{/if}}
+            </nav>
+        </div>
     </header>
     <main>
 
@@ -50,7 +51,8 @@
         {{else}}
         Thanks for visiting!
         {{/if}}<br>
-        <span class="copy">© the TECH blog</span>
+        <span class="copyends">© the</span><span class="copytech"> TECH
+        </span></span><span class="copyends">blog</span>
     </footer>
 
     {{#if loggedIn}}
