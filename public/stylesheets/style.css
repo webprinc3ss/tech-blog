@@ -85,15 +85,6 @@ form label {
   display: block;
 }
 
-/* .wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-} */
-
 header {
   height: 85px;
   background-image: linear-gradient(black, #012764, #00378e);
@@ -165,10 +156,6 @@ header h1 a:hover {
   color:#f99535 !important;
 }
 
-/* .header-hover:hover {
-  color:#f99535 !important;
-} */
-
 .headmini {
   font-size: 3.2vh;
   font-family: 'Lily Script One', cursive;
@@ -185,15 +172,11 @@ header h1 a:hover {
 
 nav {
   width:30%;
-  /* display: flex;
-  justify-content: right;
-    */
-    text-align:right;
+  text-align:right;
 }
 
 nav a {
   color: #eaef3a;
-  /* width: 100%;  */
 }
 
 nav a:hover {
@@ -213,27 +196,21 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* width:100% */
-
 }
 
 section {
-  /* padding: 0% 12%; */
   background-attachment: scroll;
   box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
   padding: 10px 20px;
   margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.95);
-  /* width: 55%; */
   border: 1px solid #fa4568;
   border-radius: 25px;
   display: flex;
   justify-content: left;
   width:100%;
   min-width: 375px;
-  /* align-items: center; */
   margin-bottom:100px;
-  /* margin-bottom: 100px; */
 }
 
 .center-content {
@@ -255,43 +232,33 @@ article {
   border: 1px solid #fa4568;
   border-radius: 25px;
   min-width: 375px;
-  /* margin-bottom: 100px; */
 }
 
 .post-container {
   display: flex;
   justify-content: center;
-  /* padding: 0% 12%; */
   align-items: center;
   width: 100%;
   margin-bottom:100px;
 }
 
 .section-form {
-  /* padding: 0% 12%; */
   background-attachment: scroll;
   box-shadow: 0px 3px 8px 3px rgba(0,0,0,0.25);
   padding: 10px 20px;
   margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.95);
-  /* width: 55%; */
   border: 1px solid #fa4568;
   border-radius: 25px;
-  /* display: flex;
-  justify-content: center; */
   width:100%;
-  /* align-items: center; */
   margin-bottom:100px;
   min-width: 375px;
-  /* margin-bottom: 100px; */
 }
 
 .form-center {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
   width: 300px;
-  /* height:50vh; */
 }
 
 .btn-no-style {
@@ -328,7 +295,6 @@ article {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
-  
 }
 
 .diamond {
@@ -431,9 +397,9 @@ footer {
   main {
     padding: 0;
   }
+
 .right {
   font-size: 13px;
-
 }
 
 h1 {
