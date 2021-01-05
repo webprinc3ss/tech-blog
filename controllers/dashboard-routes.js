@@ -35,7 +35,7 @@ router.get('/', withAuth, (req, res) => {
             const posts = dbPostData.map(post => post.get({ plain: true }));
             res.render('dashboard', {
                 posts,
-                loggedIn: true,
+                loggedIn: !!req.session.loggedIn,
                 user: { username: req.session.username }
             });
         })
@@ -74,7 +74,8 @@ router.get('/edit/:id', withAuth, (req, res) => {
 
                 res.render('edit-post', {
                     post,
-                    loggedIn: true
+                    loggedIn: !!req.session.loggedIn,
+                    user: { username: req.session.username }
                 });
             } else {
                 res.status(404).end();
