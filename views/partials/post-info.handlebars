@@ -1,12 +1,13 @@
 <article class="post">
     <div class="title">
         <h3><a href="/post/{{id}}">{{title}}</a></h3>
+        <div class="byline">
+            {{user.username}} on {{format_date created_at}}
+            |
+            <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+        </div>
         {{post_body}}
         <br><br>
     </div>
-    <div class="meta">
-        By {{user.username}} on {{format_date created_at}}
-        |
-        <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-    </div>
+
 </article>
