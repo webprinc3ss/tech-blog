@@ -2,6 +2,8 @@
 
 ![Language](https://img.shields.io/badge/Lang-JavaScript-yellow)
 
+![Screenshot](public/images/tech_blog_ss.jpg)
+
 ## Table of Contents
   1. [Description](#description)
   2. [Built With](#built-with)
@@ -10,9 +12,6 @@
   5. [Questions](#questions)
   
 ## Description
-
-![Screenshot](public/images/tech_blog_ss.jpg)
-
 The Tech Blog is a CMS blog site for developers who write about Tech.  The homepage displays all the blog posts for the site. Users can sign-up, log in, create, edit and delete blog posts.  One can also post comments on other users' posts.  Each user has a personalized dashboard that displays their posts with a form to create new posts.
 
 ## Built With
