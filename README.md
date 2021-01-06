@@ -12,14 +12,17 @@
   5. [Questions](#questions)
   
 ## Description
-The Tech Blog is a CMS blog site for developers who write about Tech.  The homepage displays all the blog posts for the site. Users can sign-up, log in, create, edit and delete blog posts.  One can also post comments on other users' posts.  Each user has a personalized dashboard that displays their posts with a form to create new posts.
+The Tech Blog is a CMS blog site for developers who write about Tech.  The homepage displays all the blog posts for the site. Users can sign-up, log in, create, edit and delete blog posts.  One can also post comments on other users' posts.  Each user has a personalized dashboard that displays their posts with a form to create new posts.  
+
+This project follows the Model-View-Controller architectural paradigm. Bcrypt and Dotenv npm package installations secure passwords and the database.
 
 ## Built With
 - Node.js
 - JavaScript
 - HTML
-- Handlebars
+- Express-Handlebars
 - Express
+- Express-Session
 - MySql2
 - Sequelize
 - CSS3
