@@ -13,12 +13,14 @@ const PORT = process.env.PORT || 3001;
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-    secret: 'Super secret secret',
+    secret: process.env.SESSION_SECRET,
     rolling: true, // <-- Set `rolling` to `true`
     secureProxy: true,
     cookie: {
         httpOnly: true,
-        maxAge: 2 * 60 * 60 * 1000 //2 hours;
+        maxAge: 60000
+
+        // 2 * 60 * 60 * 1000 2 hours;
     },
     resave: false,
     saveUninitialized: true,
