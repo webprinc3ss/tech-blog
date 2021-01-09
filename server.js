@@ -13,7 +13,8 @@ const PORT = process.env.PORT || 3001;
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 const sess = {
-    secret: process.env.SESSION_SECRET,
+    secret: 'kitty kitteh cat',
+    //process.env.SESSION_SECRET
     rolling: true, // <-- Set `rolling` to `true`
     secureProxy: true,
     cookie: {
