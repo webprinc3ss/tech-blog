@@ -19,7 +19,7 @@ const sess = {
     secureProxy: true,
     cookie: {
         httpOnly: true,
-        maxAge: 120000
+        maxAge: 120000 //short test
 
         // 2 * 60 * 60 * 1000 2 hours;
     },

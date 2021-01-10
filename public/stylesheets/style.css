@@ -68,7 +68,6 @@ textarea:focus, input:focus {
 
 textarea {
   width: 100%;
-  /* min-width: 70%; */
   min-height: 200px;
   font-size: 15px;
 }
@@ -93,7 +92,6 @@ header {
   align-items: center;
   padding: 0 1%;
   background-color: #00378e;
-  /* background-image: url("/images/colorful_code.jpg"); */
   -webkit-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
   -moz-box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
   box-shadow: 0px 3px 15px 10px rgba(0,0,0,0.49);
@@ -117,7 +115,6 @@ header {
 
 .right a {
   color: #eaef3a;
-  /* width: 100%;  */
 }
 
 .right a:hover {
@@ -131,7 +128,6 @@ header h1 a {
   color: #eaef3a;
   padding: 0px;
   width:33%;
-  /* background-color: white; */
 }
 h1 {
   min-width: 220px;
@@ -184,9 +180,7 @@ nav a:hover {
 }
 
 main {
-  /* flex: 1; */
   padding: 2% 25%;
-
   z-index: 8000;
   position: relative;
   background-attachment: fixed;
