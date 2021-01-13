@@ -17,7 +17,7 @@ async function loginFormHandler(event) {
         if (response.ok) {
             document.location.replace('/dashboard');
         } else {
-            alert("You need a working username and password combo. Go sign-up instead!");
+            alert("Invalid credentials.  Please check them and try again or sign-up instead!");
         }
     }
 }
