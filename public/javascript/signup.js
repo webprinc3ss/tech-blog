@@ -19,7 +19,7 @@ async function signupFormHandler(event) {
             console.log('success');
             document.location.replace('/dashboard');
         } else {
-            alert(response.statusText);
+            alert("That username/password combo is invalid or already in user by someone else. Please try something else.");
         }
     }
 }
